@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "deepseamod:block/moonstone_block"
+    }
+  }
+}
