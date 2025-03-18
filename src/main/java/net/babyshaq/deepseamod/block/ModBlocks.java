@@ -2,9 +2,6 @@ package net.babyshaq.deepseamod.block;
 
 import net.babyshaq.deepseamod.DeepSeaMod;
 import net.babyshaq.deepseamod.item.ModItems;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -23,7 +20,6 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> MOONSTONE_BLOCK = registerBlock("moonstone_block",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .setId(ResourceKey.create(Registries.BLOCK, ResourceLocation.fromNamespaceAndPath(DeepSeaMod.MOD_ID, "moonstone_block")))
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.TUFF_BRICKS)));
 
 
@@ -34,8 +30,7 @@ public class ModBlocks {
     }
 
     private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block) {
-        ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()
-                .setId(ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(DeepSeaMod.MOD_ID, name)))));
+        ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
 
     public static void register(IEventBus eventBus) {
