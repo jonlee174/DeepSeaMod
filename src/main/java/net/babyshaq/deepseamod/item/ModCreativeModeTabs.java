@@ -20,6 +20,9 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.MOONSTONE.get());
                         output.accept(ModBlocks.MOONSTONE_BLOCK.get());
+                        output.accept(ModBlocks.METEORITE_BLOCK.get());
+                        output.accept(ModBlocks.METEORITE_IRON_ORE.get());
+                        output.accept(ModBlocks.METEORITE_MOONSTONE_ORE.get());
                     }).build());
 
     public static void register(IEventBus eventBus) {

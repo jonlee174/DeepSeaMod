@@ -22,6 +22,17 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(4f).requiresCorrectToolForDrops().sound(SoundType.TUFF_BRICKS)));
 
+    public static final RegistryObject<Block> METEORITE_BLOCK = registerBlock("meteorite_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)));
+
+    public static final RegistryObject<Block> METEORITE_IRON_ORE = registerBlock("meteorite_iron_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)));
+
+    public static final RegistryObject<Block> METEORITE_MOONSTONE_ORE = registerBlock("meteorite_moonstone_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f).requiresCorrectToolForDrops().sound(SoundType.NETHERITE_BLOCK)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

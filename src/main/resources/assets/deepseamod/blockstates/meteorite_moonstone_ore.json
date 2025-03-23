@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "deepseamod:block/meteorite_moonstone_ore"
+    }
+  }
+}

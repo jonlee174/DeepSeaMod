@@ -1,5 +1,8 @@
 {
   "item.deepseamod.moonstone": "Moonstone",
-  "item.deepseamod.moonstone_block": "Block of Moonstone",
+  "block.deepseamod.moonstone_block": "Block of Moonstone",
+  "block.deepseamod.meteorite_block": "Meteorite",
+  "block.deepseamod.meteorite_iron_ore": "Meteorite Iron Ore",
+  "block.deepseamod.meteorite_moonstone_ore": "Meteorite Moonstone Ore",
   "creativetab.deepseamod.moonstone_items": "Deep Sea Mod"
 }
